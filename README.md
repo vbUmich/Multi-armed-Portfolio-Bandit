@@ -1,1 +1,1 @@
-# Multi-armed_Portfolio_Bandit
+# Multi-armed Portfolio Bandit

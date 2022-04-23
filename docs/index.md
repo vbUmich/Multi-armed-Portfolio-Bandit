@@ -33,7 +33,7 @@ The reinforcement learning agent in our case is a Multi-Armed Bandit (MAB). We c
 - **Variation on Exploration Intensity**: we used several parameters for epsilon, ranging from 0 to 0.40, inclusively, at 0.10 intervals. 
 - **Variation on Exploitation Profile**: we used a parameter for decaying the epsilon parameter over time. 
 - **Variation on Stationarity**: we constructed two non-stationary versions for the estimation of mean reward of actions by:
-  - Considering only a historical buffer of past rewards to calculate mean rewards,
+  - Considering only a historical buffer of past rewards to calculate mean rewards.
   - Considering an exponentially decreasing mean reward to calculate mean reward.
 
 

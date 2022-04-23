@@ -67,6 +67,13 @@ Portfolio Risk-Adjusted Profit and Loss: at each time step it calculates the ret
 </p>
 
 <p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_pl.PNG">
+</p>
+<p align="center">
+  <b>Table 2</b>
+</p>
+
+<p align="center">
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_pl.png">
 </p>
 <p align="center">
@@ -78,6 +85,13 @@ Portfolio Risk-Adjusted Profit and Loss: at each time step it calculates the ret
 </p>
 <p align="center">
   <b>Figure 6</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_sharpe.PNG">
+</p>
+<p align="center">
+  <b>Table 3</b>
 </p>
 
 <p align="center">

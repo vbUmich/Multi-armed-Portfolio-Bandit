@@ -163,6 +163,8 @@ It is interesting to discuss the behavior of the models during 2020, especially 
   <b>Figure 3</b>
 </p>
 
+***
+
 <p align="center">
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_label_evolution.png">
 </p>
@@ -192,6 +194,8 @@ As can be appreciated from **Table 2**, the non-stationary version of the P&L re
   <b>Table 2</b>
 </p>
 
+***
+
 <p align="center">
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_pl.png">
 </p>
@@ -208,12 +212,16 @@ Sharpe-based reward functions appear to work best in selecting superior-performi
   <b>Figure 7</b>
 </p>
 
+***
+
 <p align="center">
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_sharpe.png">
 </p>
 <p align="center">
   <b>Figure 8</b>
 </p>
+
+***
 
 <p align="center">
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_sharpe.PNG">

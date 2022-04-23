@@ -262,7 +262,7 @@ Both Rodrigo Erices and Vlad Bardalez contributed to all aspects of the project.
 
 Asness, C. et al. (2013). Value and Momentum Everywhere. Journal of Finance. 68(3). [https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf](https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf)
 
-Galbraith (2016) Python library for Multi-Armed Bandits [Source code]. [https://github.com/bgalbraith/bandits](https://github.com/bgalbraith/bandits)
+Galbraith, B. (2016) Python library for Multi-Armed Bandits [Source code]. [https://github.com/bgalbraith/bandits](https://github.com/bgalbraith/bandits)
 
 Kho, J. (accessed online 2018), Why Random Forest is My Favorite Machine Learning Model. Towards Data Science. [https://towardsdatascience.com/why-random-forest-is-my-favorite-machine-learning-model-b97651fa3706](https://towardsdatascience.com/why-random-forest-is-my-favorite-machine-learning-model-b97651fa3706)
 

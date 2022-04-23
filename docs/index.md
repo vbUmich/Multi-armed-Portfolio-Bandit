@@ -96,7 +96,7 @@ This strategy is based on the work of MAN AHL’s Target Risk Strategies (Korgao
 Given the entirety of the feature set has at least daily frequency, we construct the prediction labels similar to the other strategy, but with a one-week horizon and a 1.5% overperformance threshold. Similarity to the previous case, there is no large concern regarding label imbalance (see **Figure 2**)
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_freq_counts.png">
+  <img src="images/model_2_freq_counts.png">
 </p>
 <p align="center">
   <b>Figure 2 - Frequency Count of Model Strategy 1 Labels</b>
@@ -146,7 +146,7 @@ As expected, general accuracy falls greatly from the training period to the test
 Given the better out-of-sample performance of Model 2, we can speculate that the reinforcement learning agent would tend to have a preference for this strategy over Model 1.
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/supervised_confusion_matrices.PNG">
+  <img src="images/supervised_confusion_matrices.PNG">
 </p>
 <p align="center">
   <b>Table 1 - Supervised Model Confusion Matrices and Aggregated Metrics</b>
@@ -157,7 +157,7 @@ Given the better out-of-sample performance of Model 2, we can speculate that the
 It is interesting to discuss the behavior of the models during 2020, especially after the start of the COVID pandemic. As evidenced by **Figures 3 & 4**, both models failed to adequately avoid the most important drawdowns during the pandemic, however Model 1 was positive before the fall whereas Model 2 was neutral. It is still interesting to note how both models noticed the high volatility, as the neutral probability was significantly reduced. Model 1 seems to have been much more reactive during this period, and quickly adopted a positive stance that as the market recovered ceded ground to the preponderance of neutral and negative probabilities. Model 2 on the other hand stayed positive for quite some time, only ceding ground in the last quarter of the year. During the few months as the market recovered, Model 2 appeared to have had the advantage.
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_1_label_evolution.png">
+  <img src="images/model_1_label_evolution.png">
 </p>
 <p align="center">
   <b>Figure 3 - Supervised Model 1 Evolution of Probabilities</b>
@@ -166,7 +166,7 @@ It is interesting to discuss the behavior of the models during 2020, especially 
 ***
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_label_evolution.png">
+  <img src="images/model_2_label_evolution.png">
 </p>
 <p align="center">
   <b>Figure 4 - Supervised Model 2 Evolution of Probabilities</b>
@@ -179,7 +179,7 @@ It is interesting to discuss the behavior of the models during 2020, especially 
 We found it is no easy task to add value from a P&L perspective through the use of a MAB selecting strategies. One way in which it appears to add value, is through quickly discarding strategies that tend to perform worse. This is evident by inspecting **Figure 5**, where we can notice how strategies ‘static_60/40’ and ‘naive momentum’ were not frequently selected. What was much more challenging, is in adding value by switching between remaining strategies that appear to have an edge such as strategies ‘supervised 1’, ‘supervised 2’ and ‘perfect_foresight_20’. The MAB strategy ended up being suboptimal to just sticking with each of these best performing strategies, as it correctly identified the best performing strategy, but switched in particularly bad moments only to reverse course later on.
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_pl.png">
+  <img src="images/eg_0_rel_returns_action_counts_pl.png">
 </p>
 <p align="center">
   <b>Figure 5 - Non-stationary Buffered Epsilon-Greedy for Profit and Loss Reward</b>
@@ -188,7 +188,7 @@ We found it is no easy task to add value from a P&L perspective through the use 
 As can be appreciated from **Table 2**, the non-stationary version of the P&L reward function appears to work better, in particular for short buffer periods, both for P&L and Sharpe ratio metrics. From **Figure 6** we can appreciate an important qualitative change in how the MAB selects strategies, as no single one dominates as strongly as in the other settings. In general, this is a remarkably interesting result from a financial perspective. Non-stationary Greedy MABs can be interpreted as what in a financial setting would be called a ‘time series momentum’ policy, which in essence prioritizes strategies or assets that have performed best in a recent rolling window period. There is a large strand of literature (see for example Asness et al, 2013) that documents this phenomenon, and actually finds that shorter window periods tend to work best, although at the cost of typically increased costs (which we do not analyze here). 
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_pl.PNG">
+  <img src="images/policy_comparison_pl.PNG">
 </p>
 <p align="center">
   <b>Table 2 - MAB Policy Comparison for Profit and Loss Reward</b>
@@ -197,7 +197,7 @@ As can be appreciated from **Table 2**, the non-stationary version of the P&L re
 ***
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_pl.png">
+  <img src="images/nseg_0_rel_return_action_counts_pl.png">
 </p>
 <p align="center">
   <b>Figure 6 - Non-stationary EWM Epsilon-Greedy for Profit and Loss Reward</b>
@@ -206,7 +206,7 @@ As can be appreciated from **Table 2**, the non-stationary version of the P&L re
 Sharpe-based reward functions appear to work best in selecting superior-performing strategies, as can be seen from **Figure 7**, they quickly converge to Supervised Model 1, without deviating from it. This makes some intuitive sense, as Sharpe ratios are commonly used in the industry to identify superior strategies with more precision (through risk-adjustment). It is unsettling however, to notice that when analyzing non-stationary versions of the MAB with Sharpe-based rewards, the performance suffers strongly (see **Figure 8**), and even more so with bigger buffers (see **Table 3**). This calls into question the validity of this whole configuration, as it could be just due to a ‘lucky start’ in the non-stationary formulation, given the strong divergence in results, and the solid literature supporting momentum-like policies discussed previously.
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_sharpe.png">
+  <img src="images/eg_0_rel_returns_action_counts_sharpe.png">
 </p>
 <p align="center">
   <b>Figure 7 - Non-stationary Buffered Epsilon-Greedy for Sharpe-base Reward</b>
@@ -215,7 +215,7 @@ Sharpe-based reward functions appear to work best in selecting superior-performi
 ***
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_sharpe.png">
+  <img src="images/nseg_0_rel_return_action_counts_sharpe.png">
 </p>
 <p align="center">
   <b>Figure 8 - Non-stationary EWM Epsilon-Greedy for Sharpe-base Reward</b>
@@ -224,7 +224,7 @@ Sharpe-based reward functions appear to work best in selecting superior-performi
 ***
 
 <p align="center">
-  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_sharpe.PNG">
+  <img src="images/policy_comparison_sharpe.PNG">
 </p>
 <p align="center">
   <b>Table 3 - MAB Policy Comparison for Sharpe-base Reward</b>

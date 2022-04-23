@@ -225,7 +225,7 @@ Within the domain of finance, no experiment is ever complete without validating 
 ## 7. Statement of Work
 Both Rodrigo Erices and Vlad Bardalez contributed to all aspects of the project.
 
-## 8. 
+## 8. References
 Asness, C. et al. (2013). Value and Momentum Everywhere. Journal of Finance. 68(3). https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf
 
 Galbraith (2016) Python library for Multi-Armed Bandits [Source code]. https://github.com/bgalbraith/bandits.

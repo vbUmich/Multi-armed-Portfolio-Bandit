@@ -53,6 +53,13 @@ Portfolio Risk-Adjusted Profit and Loss: at each time step it calculates the ret
 </p>
 
 <p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/supervised_confusion_matrices.PNG">
+</p>
+<p align="center">
+  <b>Table 1 - Supervised Model Confusion Matrices and Aggregated Metrics</b>
+</p>
+
+<p align="center">
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_1_label_evolution.png">
 </p>
 <p align="center">

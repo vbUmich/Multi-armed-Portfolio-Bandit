@@ -76,7 +76,7 @@ Label construction was an essential element in our experiment design. We aim to 
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_1_freq_counts.png">
 </p>
 <p align="center">
-  <b>Figure 1</b>
+  <b>Figure 1 - Frequency Count of Model Strategy 1 Labels</b>
 </p>
 
 ### 2.6 Model Strategy 2
@@ -99,7 +99,7 @@ Given the entirety of the feature set has at least daily frequency, we construct
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_freq_counts.png">
 </p>
 <p align="center">
-  <b>Figure 2</b>
+  <b>Figure 2 - Frequency Count of Model Strategy 1 Labels</b>
 </p>
 
 ### 2.7 Baseline Strategies
@@ -160,7 +160,7 @@ It is interesting to discuss the behavior of the models during 2020, especially 
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_1_label_evolution.png">
 </p>
 <p align="center">
-  <b>Figure 3</b>
+  <b>Figure 3 - Supervised Model 1 Evolution of Probabilities</b>
 </p>
 
 ***
@@ -169,7 +169,7 @@ It is interesting to discuss the behavior of the models during 2020, especially 
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_label_evolution.png">
 </p>
 <p align="center">
-  <b>Figure 4</b>
+  <b>Figure 4 - Supervised Model 2 Evolution of Probabilities</b>
 </p>
 
 ### 4.2 Reinforcement Learning Model
@@ -182,7 +182,7 @@ We found it is no easy task to add value from a P&L perspective through the use 
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_pl.png">
 </p>
 <p align="center">
-  <b>Figure 5</b>
+  <b>Figure 5 - Non-stationary Buffered Epsilon-Greedy for Profit and Loss Reward</b>
 </p>
 
 As can be appreciated from **Table 2**, the non-stationary version of the P&L reward function appears to work better, in particular for short buffer periods, both for P&L and Sharpe ratio metrics. From **Figure 6** we can appreciate an important qualitative change in how the MAB selects strategies, as no single one dominates as strongly as in the other settings. In general, this is a remarkably interesting result from a financial perspective. Non-stationary Greedy MABs can be interpreted as what in a financial setting would be called a ‘time series momentum’ policy, which in essence prioritizes strategies or assets that have performed best in a recent rolling window period. There is a large strand of literature (see for example Asness et al, 2013) that documents this phenomenon, and actually finds that shorter window periods tend to work best, although at the cost of typically increased costs (which we do not analyze here). 
@@ -191,7 +191,7 @@ As can be appreciated from **Table 2**, the non-stationary version of the P&L re
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_pl.PNG">
 </p>
 <p align="center">
-  <b>Table 2</b>
+  <b>Table 2 - MAB Policy Comparison for Profit and Loss Reward</b>
 </p>
 
 ***
@@ -200,7 +200,7 @@ As can be appreciated from **Table 2**, the non-stationary version of the P&L re
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_pl.png">
 </p>
 <p align="center">
-  <b>Figure 6</b>
+  <b>Figure 6 - Non-stationary EWM Epsilon-Greedy for Profit and Loss Reward</b>
 </p>
 
 Sharpe-based reward functions appear to work best in selecting superior-performing strategies, as can be seen from **Figure 7**, they quickly converge to Supervised Model 1, without deviating from it. This makes some intuitive sense, as Sharpe ratios are commonly used in the industry to identify superior strategies with more precision (through risk-adjustment). It is unsettling however, to notice that when analyzing non-stationary versions of the MAB with Sharpe-based rewards, the performance suffers strongly (see **Figure 8**), and even more so with bigger buffers (see **Table 3**). This calls into question the validity of this whole configuration, as it could be just due to a ‘lucky start’ in the non-stationary formulation, given the strong divergence in results, and the solid literature supporting momentum-like policies discussed previously.
@@ -209,7 +209,7 @@ Sharpe-based reward functions appear to work best in selecting superior-performi
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_sharpe.png">
 </p>
 <p align="center">
-  <b>Figure 7</b>
+  <b>Figure 7 - Non-stationary Buffered Epsilon-Greedy for Sharpe-base Reward</b>
 </p>
 
 ***
@@ -218,7 +218,7 @@ Sharpe-based reward functions appear to work best in selecting superior-performi
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_sharpe.png">
 </p>
 <p align="center">
-  <b>Figure 8</b>
+  <b>Figure 8 - Non-stationary EWM Epsilon-Greedy for Sharpe-base Reward</b>
 </p>
 
 ***
@@ -227,7 +227,7 @@ Sharpe-based reward functions appear to work best in selecting superior-performi
   <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/policy_comparison_sharpe.PNG">
 </p>
 <p align="center">
-  <b>Table 3</b>
+  <b>Table 3 - MAB Policy Comparison for Sharpe-base Reward</b>
 </p>
 
 Finally, neither the epsilon parameter nor its decay plays a relevant role in our results. This was expected, as we are using a modified version of the MAB algorithm, one in which at every time step the mean rewards are updated, eliminating the need to randomly explore alternatives to increase their reward estimates. 

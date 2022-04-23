@@ -73,7 +73,7 @@ These features have frequencies ranging from daily to monthly updates and are re
 Label construction was an essential element in our experiment design. We aim to identify next month’s excess returns above (and below) a 3.0% threshold. But we do so carefully: we want to identify months in which the first occurrence breaches the threshold, even though by the end of the month the excess return is within bounds. This way we serve two purposes. First, we mimic an important real-world consideration, an asset manager does not necessarily care what happens between two exact dates, but what happens within a month. If the markets fall and then recover, we need to ensure this event is identified as it presents an opportunity, even when by the end of the month the performance was flat. Secondly, this way of defining the labels almost alleviates label imbalance issues that would arise if we just defined the labels on a fixed date window (see **Figure 1**).
 
 <p align="center">
-  <img src="/images/model_1_freq_counts.png">
+  <img src="images/model_1_freq_counts.png">
 </p>
 <p align="center">
   <b>Figure 1 - Frequency Count of Model Strategy 1 Labels</b>

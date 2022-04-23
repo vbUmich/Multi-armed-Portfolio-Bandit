@@ -4,9 +4,8 @@
 
 The accompanying blog post for this repository can be found [here](https://vbumich.github.io/Multi-armed-Portfolio-Bandit/).
 
-***
 
-## Installing Packages with pip:
+## Installing packages with pip:
 
 The following command will install all packages listed in `requirements.txt`.
 

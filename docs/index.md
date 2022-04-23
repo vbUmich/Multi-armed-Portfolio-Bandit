@@ -38,8 +38,61 @@ Our MAB aims to maximize the cumulative sum of the rewards observed through the 
 Portfolio Profit and Loss: at each time step it calculates the return of the recommended portfolio.
 Portfolio Risk-Adjusted Profit and Loss: at each time step it calculates the return of the recommended portfolio, divided by the expected ex-ante standard deviation of the recommended portfolio. This standard deviation is calculated by assuming the historical covariances between the equity and fixed income stay the same.
 
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_1_freq_counts.png">
+</p>
+<p align="center">
+  <b>Figure 1</b>
+</p>
 
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_freq_counts.png">
+</p>
+<p align="center">
+  <b>Figure 2</b>
+</p>
 
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_1_label_evolution.png">
+</p>
+<p align="center">
+  <b>Figure 3</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/model_2_label_evolution.png">
+</p>
+<p align="center">
+  <b>Figure 4</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_pl.png">
+</p>
+<p align="center">
+  <b>Figure 5</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_pl.png">
+</p>
+<p align="center">
+  <b>Figure 6</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/eg_0_rel_returns_action_counts_sharpe.png">
+</p>
+<p align="center">
+  <b>Figure 7</b>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vbUmich/Multi-armed-Portfolio-Bandit/blob/main/docs/images/nseg_0_rel_return_action_counts_sharpe.png">
+</p>
+<p align="center">
+  <b>Figure 8</b>
+</p>
 
 ***
 ***

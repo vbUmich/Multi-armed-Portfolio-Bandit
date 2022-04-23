@@ -6,4 +6,14 @@ The accompanying blog post for this repository can be found [here](https://vbumi
 
 ***
 
+## Installing Packages with pip:
+
+The following command will install all packages listed in `requirements.txt`.
+
+```
+pip install -r requirements.txt
+```
+
+***
+
 Made by Rodrigo Erices and Vlad Bardalez

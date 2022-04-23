@@ -1,4 +1,4 @@
-# Multi-armed Portfolio Bandit
+# Forest Bandits: An Approach to Dynamic Portfolio Allocation
 
 ## 1. Introduction
 

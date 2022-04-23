@@ -30,9 +30,9 @@ One particularly important point to note is that, in a traditional sense, explor
 
 The reinforcement learning agent in our case is a Multi-Armed Bandit (MAB). We choose this model for its simplicity and natural fit to our action space and adaptability in terms of reward functions. Multi-armed bandits very clearly identify the exploration versus exploitation trade-off that is studied within the domain of reinforcement learning. If the multi-armed bandit suggests that the agent has an edge by exploring, there is merit to implementing more advanced reinforcement learning methods to solve the problem. We approached our problem using different policies, which were also selected due to their tractability and interpretability. We relied on several variations of epsilon-greedy strategies.
 
-- Variation on Exploration Intensity: we used several parameters for epsilon, ranging from 0 to 0.40, inclusively, at 0.10 intervals. 
-- Variation on Exploitation Profile: we used a parameter for decaying the epsilon parameter over time. 
-- Variation on Stationarity: we constructed two non-stationary versions for the estimation of mean reward of actions by:
+- **Variation on Exploration Intensity**: we used several parameters for epsilon, ranging from 0 to 0.40, inclusively, at 0.10 intervals. 
+- **Variation on Exploitation Profile**: we used a parameter for decaying the epsilon parameter over time. 
+- **Variation on Stationarity**: we constructed two non-stationary versions for the estimation of mean reward of actions by:
   - Considering only a historical buffer of past rewards to calculate mean rewards,
   - Considering an exponentially decreasing mean reward to calculate mean reward.
 
@@ -44,8 +44,8 @@ The action space is detailed in the next section, for the time being suffice it 
 **Rewards**
 
 Our MAB aims to maximize the cumulative sum of the rewards observed through the whole experiment. We consider two distinct reward-generating functions that serve different purposes from a financial perspective: the first is constructed to measure Profit and Loss (P&L), the second one measures risk-adjusted profit and loss (Sharpe ratio). These are common financial objectives when constructing portfolios or analyzing strategies. 
-- Portfolio Profit and Loss: at each time step it calculates the return of the recommended portfolio.
-- Portfolio Risk-Adjusted Profit and Loss: at each time step it calculates the return of the recommended portfolio, divided by the expected ex-ante standard deviation of the recommended portfolio. This standard deviation is calculated by assuming the historical covariances between the equity and fixed income stay the same.
+- **Portfolio Profit and Loss**: at each time step it calculates the return of the recommended portfolio.
+- **Portfolio Risk-Adjusted Profit and Loss**: at each time step it calculates the return of the recommended portfolio, divided by the expected ex-ante standard deviation of the recommended portfolio. This standard deviation is calculated by assuming the historical covariances between the equity and fixed income stay the same.
 
 ### 2.4 Action Space: Strategies and Supervised Models
 

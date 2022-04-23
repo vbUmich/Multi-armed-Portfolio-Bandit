@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ## Understanding the Structure of the Code
 
-There are several Jupyter notebooks that comprise the project. However, the main analysis is stored in just one notebook. The other notebooks are there to provide data inputs to be used in the main file.
+There are several Jupyter notebooks that comprise the project. However, the main analysis is stored in just one notebook. The other notebooks are there to provide data inputs to be used in the main file. Inputs are stored in the repository in the 'Data' folder.
 
 ### Main Code: 'Multi-armed Portfolio Bandit.ipynb'
 This notebook is the core of our Multi-armed Bandit (MAB) analysis. The notebooks is seperated into different sections five sections:
@@ -62,7 +62,7 @@ The code proceeds in two steps. The first one downloads to separate csv files th
 #### Supervised Models
 1. Run 'IntradayData.ipynb'. This file outputs 'intraday.csv' which is required by 'SupervisedModel2.ipynb'
 2. Run 'SupervisedModel1.ipynb' - This file outputs 'supervisedmodel1.csv' which is required by the main model
-3. Run 'SupervisedModel2.ipynb' - This file outputs 'supervisedmodel1.csv' which is required by the main model
+3. Run 'SupervisedModel2.ipynb' - This file outputs 'supervisedmodel2.csv' which is required by the main model
 
 #### Other Inputs for The Main File
 1. Run 'GetWeeklyFundReturns.ipynb' - This file outputs 'selectedFundWeeklyReturns.csv' which is used by the main model and the next file

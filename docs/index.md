@@ -260,12 +260,12 @@ Both Rodrigo Erices and Vlad Bardalez contributed to all aspects of the project.
 
 ## 8. References
 
-Asness, C. et al. (2013). Value and Momentum Everywhere. Journal of Finance. 68(3). https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf
+Asness, C. et al. (2013). Value and Momentum Everywhere. Journal of Finance. 68(3). [https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf](https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf)
 
-Galbraith (2016) Python library for Multi-Armed Bandits [Source code]. https://github.com/bgalbraith/bandits.
+Galbraith (2016) Python library for Multi-Armed Bandits [Source code]. [https://github.com/bgalbraith/bandits](https://github.com/bgalbraith/bandits)
 
-Kho, J. (accessed online 2018), Why Random Forest is My Favorite Machine Learning Model. Towards Data Science. https://towardsdatascience.com/why-random-forest-is-my-favorite-machine-learning-model-b97651fa3706
+Kho, J. (accessed online 2018), Why Random Forest is My Favorite Machine Learning Model. Towards Data Science. [https://towardsdatascience.com/why-random-forest-is-my-favorite-machine-learning-model-b97651fa3706](https://towardsdatascience.com/why-random-forest-is-my-favorite-machine-learning-model-b97651fa3706)
 
-Korgaonkar, R. et al (accessed online 2022), TargetRisk: Aiming to Protect and Grow Your Money. MAN AHL’s Website. https://www.man.com/ahl-targetrisk
+Korgaonkar, R. et al (accessed online 2022), TargetRisk: Aiming to Protect and Grow Your Money. MAN AHL’s Website. [https://www.man.com/ahl-targetrisk](https://www.man.com/ahl-targetrisk)
 
 Panigirtzoglou, N. et al. (2019). Flows and Liquidity: Dollar liquidity tightening. J.P. Morgan Markets. April 26th.
